@@ -5,7 +5,7 @@
 # r8168 is the Linux device driver released for Realtek Gigabit Ethernet
 # controllers with PCI-Express interface.
 #
-# Copyright(c) 2021 Realtek Semiconductor Corp. All rights reserved.
+# Copyright(c) 2022 Realtek Semiconductor Corp. All rights reserved.
 #
 # This program is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by the Free
@@ -335,9 +335,6 @@ int rtl8125_get_rxfh(struct net_device *dev, u32 *indir, u8 *key,
 
         return 0;
 }
-
-#define RSS_KEY_8125 0x4600
-#define RSS_INDIRECTION_TBL_8125_V2 0x4700
 
 static u32 rtl8125_rss_key_reg(struct rtl8125_private *tp)
 {
